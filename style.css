@@ -1,3 +1,7 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
  * {
     margin: 0;
     padding: 0;
@@ -26,9 +30,29 @@ body {
 
 .apresentacao__conteudo__titulo{
     font-size: 36px;
+    font-family: "Playwrite IN", serif;
 }
 
 .apresentacao__conteudo__paragrafo{
     font-size: 24px;
+    font-family: "Playwrite IN", serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000;
+    font-family: "Playwrite IN", serif;
 }
 
