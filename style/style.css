@@ -4,19 +4,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
- * {
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #1DCEDB;
+    --cor-terciaria: #1DB7DB;
+    --cor-hover: #9E1DDB;
+
+    --fonte-primaria: 'Courier New', Courier, monospace;
+}
+
+* {
     margin: 0;
     padding: 0;
  }
 
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 .titulo-destaque {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .cabecalho {
@@ -33,7 +41,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -80,7 +88,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
@@ -88,7 +96,7 @@ body {
     font-weight: 600px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
     font-family: "Playwrite IN", serif;
 }
 img{
@@ -97,13 +105,13 @@ img{
 
 
 .apresentacao__links__link :hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .rodape {
     padding: 24px;
-    color: #000;
-    background-color: #22D4FD;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
